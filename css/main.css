@@ -1,0 +1,514 @@
+/*! HTML5 Boilerplate v5.0 | MIT License | http://h5bp.com/ */
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+/* ==========================================
+      BX SLIDER
+   ========================================== */
+.bx-wrapper {
+  box-shadow: none;
+  border: none;
+}
+
+/* ==========================================
+      GENERAL STYLES
+   ========================================== */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+  font-family: 'Slabo 27px', serif;
+}
+
+ul {
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+figure {
+  margin: 0;
+}
+
+h1, h2, h3 {
+  font-family: 'Oswald', sans-serif;
+  letter-spacing: 1px;
+}
+/* ==========================================
+      HEADER
+   ========================================== */
+.sub-menu {
+  display: none;
+}
+
+header nav {
+  font-family: 'Oswald', sans-serif;
+}
+
+header {
+  position: relative;
+  width: 100%;
+}
+
+.logo {
+    width: 90px;
+    height: 90px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#close-menu-btn {
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 4px 12px;
+  border: 1px solid #595959;
+  color: #595959;
+  margin: 5px;
+}
+
+.mobile-menu-icon {
+  display: inline-block;
+  height: 90px;
+  border-right: 1px solid #E7ECEC;
+  padding: 20px 30px;
+  text-align: center;
+}
+
+.mobile-menu-icon p {
+  margin: 0;
+  font-size: 10px;
+}
+
+.mobile-menu-icon .fa-bars {
+  color: #E7ECEC;
+}
+
+.mobile-header-nav {
+  display: none;
+  background: #040404;
+  width: 80%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99999999999;
+  text-transform: uppercase;
+}
+
+.mobile-header-nav li {
+  padding: 15px 0 15px 15px;
+  border-bottom: 1px solid #444646;
+}
+
+.mobile-header-nav li:last-of-type {
+  border-bottom: none;
+}
+
+.mobile-header-nav a {
+  color: #444646;
+}
+
+.mobile-header-nav a:hover {
+  color: #E7ECEC;
+}
+
+.feed {
+  margin: 20px 8% 40px;
+}
+
+.top,
+.bottom {
+  display: none;
+}
+
+.mobile-footer {
+  background: #040404;
+  text-align: center;
+  padding: 30px 0 60px;
+}
+
+.mobile-footer p {
+  margin: 0;
+}
+
+.mobile-footer figure {
+  display: inline-block;
+}
+
+footer,
+footer a {
+  color: #444646;
+}
+
+.mobile-footer img {
+  width: 175px;
+  height: auto;
+}
+
+.footer-social {
+  margin: 20px 0;
+}
+
+.footer-social li {
+  display: inline-block;
+  padding: 10px;
+  margin: 0 5px;
+  background: #444646;
+}
+
+.footer-social a {
+  color: #030403;
+}
+p.disclaimer {
+  font-size: 0.8em;
+  margin: 5px 0 0 0;
+}
+
+.disclaimer a {
+  text-decoration: underline;
+}
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+
+@media only screen and (min-width: 768px) {
+  .mobile-menu-icon {
+    display: none;
+  }
+  #close-menu-btn  {
+    display: none;
+  }
+
+  #nav-items li {
+    display: inline-block;
+    border: none;
+  }
+
+  #nav-items a:hover {
+    color: #1DBDBF;
+  }
+
+  header {
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+  }
+
+  .logo {
+    left: 10%;
+  }
+
+  .header-nav {
+    display: block;
+    position: static;
+    background-color: #fff;
+    float: right;
+    height: 90px;
+    font-size: 1.2em;
+    font-weight: lighter;
+  }
+
+  .header-nav li {
+    padding: 15px 20px;
+  }
+
+  .feed {
+    padding: 60px 0;
+    text-align: center;
+    margin: 0;
+  }
+
+  .feed .container {
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .feed-item {
+    margin: 0 20px;
+    max-width: 350px;
+    flex: 1 1 auto;
+  }
+
+  .feed-item p {
+    text-align: left;
+    padding: 0 10px;
+  }
+
+  .top,
+  .bottom {
+    display: block;
+  }
+
+  .top {
+    background: #040404;
+    padding: 10px 15px;
+  }
+
+  .top img {
+    width: auto;
+    height: 75px;
+    float: left;
+    margin: 5px;
+  }
+
+  .top .footer-social {
+    float: right;
+  }
+
+  .bottom {
+    background: #222;
+
+  }
+
+  footer .container {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .bottom .container {
+    padding-bottom: 20px;
+  }
+
+  bottom,
+  .bottom a,
+  .copy p {
+    color: #8C8C8C;
+  }
+
+  .bottom a:hover {
+    color: #1DBDBF;
+  }
+
+  .bottom .copy a:hover {
+    color: #E7ECEC;
+  }
+
+  .bottom nav {
+    /*width: 90%;*/
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 40px;
+    font-size: 1.2em;
+  }
+
+  .bottom nav li {
+      text-transform: capitalize;
+  }
+
+  .bottom nav li:first-of-type {
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+
+  .bottom .copy {
+    text-align: center;
+  }
+
+  .bottom p,
+  .bottom .disclaimer {
+    font-size: 1em;
+  }
+
+  .bottom p {
+    display: inline-block;
+    margin: 0 20px;
+  }
+  .mobile-footer {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  #nav-items li {
+    padding: 15px 40px;
+  }
+
+  footer .container {
+    max-width: 900px;
+  }
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* ==========================================================================
+   Print styles
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after {
+        background: transparent !important;
+        color: #000 !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
