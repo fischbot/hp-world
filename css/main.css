@@ -252,6 +252,10 @@ p.disclaimer {
    ========================================================================== */
 
 @media only screen and (min-width: 768px) {
+  .mobile-header-nav {
+    display: block !important;
+  }
+
   .mobile-menu-icon {
     display: none;
   }
